@@ -2,20 +2,69 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Dinesh HTML Deploy Practice</title>
+  <title>Dinesh - HTML Template Deploy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #0f172a;
+      color: #e5e7eb;
+    }
+    header {
+      background: #1f2937;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 { margin: 0; }
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      background: #111827;
+      padding: 24px;
+      border-radius: 12px;
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid #4b5563;
+      font-size: 12px;
+      margin-bottom: 8px;
+    }
+    .footer {
+      text-align: center;
+      padding: 16px;
+      font-size: 13px;
+      color: #9ca3af;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello from Dinesh's CI/CD Practice 🚀</h1>
-  <p>This is my first deployed HTML template using GitHub Actions and Jenkins.</p>
+  <header>
+    <h1>🚀 Dinesh CI/CD HTML Template</h1>
+    <p>Deployed via GitHub Actions + Jenkins</p>
+  </header>
 
-  <h2>About</h2>
-  <ul>
-    <li>Source: GitHub Repository</li>
-    <li>CI Tool 1: GitHub Actions</li>
-    <li>CI Tool 2: Jenkins</li>
-  </ul>
+  <div class="container">
+    <span class="badge">Build Info</span>
+    <h2>Current Status</h2>
+    <ul>
+      <li>Code hosted on: <strong>GitHub (jenkins-web)</strong></li>
+      <li>CI #1: <strong>GitHub Actions</strong></li>
+      <li>CI #2: <strong>Jenkins Pipeline</strong></li>
+    </ul>
 
-  <p>I will edit this text and see pipelines run automatically.</p>
+    <p>
+      Whenever I change this template and push to GitHub,  
+      both pipelines run automatically and this page is redeployed ✅
+    </p>
+  </div>
+
+  <div class="footer">
+    Dinesh • CI/CD Practice • Jenkins & GitHub Actions
+  </div>
 </body>
 </html>
 
